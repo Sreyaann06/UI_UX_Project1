@@ -1,0 +1,113 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
+  color: #4a2c2a;
+  line-height: 1.5;
+}
+header {
+  background: #b85c38;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+header .logo { font-size: 1.5rem; font-weight: bold; }
+header nav ul { list-style: none; display: flex; }
+header nav ul li { margin-left: 20px; }
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+header nav ul li a:hover { color: #ffd27f; }
+
+.hero-img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  display: block;
+}
+
+.hero {
+  background: #b85c38;
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+}
+.hero h1 { font-size: 3rem; margin-bottom: 10px; }
+.hero p { font-size: 1.2rem; }
+
+.menu-section { padding: 40px 20px; text-align: center; }
+.menu-section h2 { font-size: 2rem; margin-bottom: 15px; }
+.menu-category { margin-bottom: 25px; }
+.menu-items {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  gap: 15px;
+  scrollbar-width: thin;              
+  -webkit-overflow-scrolling: touch;  
+}
+.menu-item {
+  background: #fff;
+  border: 1px solid #e0c1a0;
+  padding: 10px 20px;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: background 0.3s;
+  flex-shrink: 0;
+}
+.menu-item:hover { background: #ffd27f; cursor: pointer; }
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #fff3e6;
+  gap: 10px;
+}
+.about-text { flex: 1 1 300px; padding: 20px; }
+.about-img { flex: 1 1 300px; padding: 20px; }
+.about-img img { width: 100%; height: auto; border-radius: 10px; display: block; }
+
+.contact-section {
+  padding: 40px 20px;
+  background: #b85c38;
+  color: #fff;
+  text-align: center;
+}
+.contact-info p { margin: 8px 0; font-size: 1.1rem; }
+.contact-info i { margin-right: 8px; }
+
+footer {
+  background: #4a2c2a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+footer .social-links a { color: #fff; margin: 0 8px; font-size: 1.3rem; }
+footer .newsletter { margin: 12px 0; }
+footer .newsletter input {
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+footer .newsletter button {
+  padding: 6px 12px;
+  border: none;
+  background: #ffd27f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer .newsletter button:hover { background: #ffb84d; }
+
+@media (max-width: 600px) {
+  header { padding: 12px 16px; }
+  .hero h1 { font-size: 2.2rem; }
+  .hero p { font-size: 1rem; }
+}
